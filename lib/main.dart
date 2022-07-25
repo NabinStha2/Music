@@ -11,7 +11,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   Directory documentDirectory = await getApplicationDocumentsDirectory();
-  debugPrint(documentDirectory.path);
+  // debugPrint(documentDirectory.path);
   Hive.init(documentDirectory.path);
   // await Hive.initFlutter();
   await Hive.openBox("music");
